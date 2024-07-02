@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #058197a9;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Card styles */
+#slack {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#slack .container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.images img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.info p span {
+    font-weight: bold;
+    color: #555;
+}
+/* footer section  */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #058197a9;
+    color: white;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    
+    padding: 0px 20px;
+}
+/* goals banner  */
+#goals{
+    color: #000000;
+    line-height: 2;
+    
+}
+#goals .container{
+    justify-content: center;
+    align-items: center;
+   margin: 0 auto;
+    background-color:#ecf8fa;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+/* card  */
+@media (min-width: 600px) {
+    #goals .container{
+        justify-content: center;
+        align-items: center;
+       margin: 0 auto;
+        background-color:#ecf8fa;
+        width: 600px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        padding: 1rem;
+       
+    }
+}
+/* Add responsive design */
+@media (min-width: 768px) {
+    #slack  {
+        padding: 10px;
+        margin: 10px;
+        
+    }
+   
+   
+}
