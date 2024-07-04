@@ -1,14 +1,21 @@
-// javascript 
-document.addEventListener("DOMContentLoaded", function() {
-    const updateTimeAndDay = () => {
-        const now = new Date();
-        const utcTime = now.toUTCString().split(' ')[4];
-        const day = now.toLocaleString('en-US', { weekday: 'long' });
+// Display current time in UTC
+function displayCurrentTime() {
+    const now = new Date();
+    const time = now.toUTCString().split(' ')[4];
+    document.getElementById('time').textContent = time;
+}
 
-        document.querySelector('[data-testid="currentTimeUTC"]').textContent = `Current Time (UTC): ${utcTime}`;
-        document.querySelector('[data-testid="currentDay"]').textContent = `Current Day: ${day}`;
-    };
+// Display current day of the week
+function displayCurrentDay() {
+    const now = new Date();
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const day = days[now.getUTCDay()];
+    document.getElementById('day').textContent = day;
+}
 
-    updateTimeAndDay();
-    setInterval(updateTimeAndDay, 1000);
-});
+// Call the functions
+displayCurrentTime();
+displayCurrentDay();
+
+// Update time every second
+setInterval(displayCurrentTime, 1000);

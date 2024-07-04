@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tech Goals</title>
+    <title>My Goals </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Tech Goals</h1>
+        <h1 data-testid="slackDisplayName">Cornelius Emanikor</h1>
     </header>
     <section id="slack">
         <div class="container">
             <div class="images">
                 <img src="/images/conny.png" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+
             </div>
             <div class="info">
-                <p data-testid="slackDisplayName"><span>My Name:</span> Cornelius Emanikor</p>
-                <p data-testid="currentTimeUTC"><span>Current Time (UTC):</span> </p>
-                <p data-testid="currentDay"><span>Current Day:</span> </p>
                 <p data-testid="slackEmail"><span> Email:</span> Corneliusekai72@gmail.com</p>
+                <p data-testid="currentTimeUTC">Current Time: <span id="time"></span></p>
+                <p data-testid="currentDay">Day: <span id="day"></span></p>
+               
             </div>
         </div>
     </section>
     <section id="goals">
-       
+
         <div class="container">
-            <h2>My Tech Goals for the next 2yrs</h2>
+            <h2>My Tech Goals for the Next 2 Years:</h2>
             <ul>
                 <li>Learn ReactJS and build several projects</li>
                 <li>Complete a certification in AWS or Azure</li>
